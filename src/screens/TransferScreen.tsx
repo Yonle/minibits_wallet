@@ -271,6 +271,7 @@ useEffect(() => {
             
             if (parseInt(amountToTransfer) + meltQuote.fee_reserve > mintBalanceToTransferFrom.balances[unit]!) {
                 setInfo(
+									
                     'There are not enough funds to cover expected lightning network fee. Try selecting another mint with a higher balance.',
                 )
             }
